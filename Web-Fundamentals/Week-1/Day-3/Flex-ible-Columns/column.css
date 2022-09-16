@@ -1,0 +1,19 @@
+.row{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.col,.col-2,.col-3{
+    padding: 1em;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+}
+.col{
+    flex: 1;
+}
+.col-2{
+    flex: 2;
+}
+.col-3{
+    flex: 3;
+}
