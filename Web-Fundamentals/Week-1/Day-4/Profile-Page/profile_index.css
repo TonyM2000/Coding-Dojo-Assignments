@@ -1,0 +1,120 @@
+.container{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.topcard{
+    background-color: aqua;
+    padding: 1em;
+}
+.image{
+    top: 40px;
+    left: 25px;
+    position:relative
+}
+.image2 > img{
+    height: 20px;
+    margin-right: 5px;
+}
+.bottomcard{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    border-bottom: 3px solid gray;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+}
+.locationandmarker{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.name{
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+.editp{
+    display:flex;
+    align-items: center;
+    margin-bottom: 2em;
+    padding: none;
+}
+.image3{
+    margin: none;
+    padding: none;
+    display: flex;
+    align-items: center;
+}
+.biography{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.image3 a{
+    margin-left: 5.31px;
+}
+.navbar{
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    background-color: black;
+    color: antiquewhite;
+}
+.navbar ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.signout{
+    margin-left: auto;
+}
+.signoutbut{
+    border: none;
+    background-color: aqua;
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.fatcolumn{
+    background-color: pink;
+    padding: 1em;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.52em;
+}
+.skinnycolumn{
+    background-color: teal;
+    padding: 1em;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.education{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.edutopbar{
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    display: flex;
+}
