@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="but.css">
+    <script src="but.js"></script>
+</head>
+
+<body>
+    <div class="fullpage">
+        <div class="navbar">
+            <div class="webpage">
+                <h1>Dojonary</h1>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="login">
+                <button onclick="changebut(this)">Login</button>
+            </div>
+        </div>
+        <div class="pagebody">
+            <div class="leftpage">
+                <div class="definition">
+                    <div class="wordside">
+                        <h2>Ninja</h2>
+                        <p>Noun</p>
+                        <p><em>Plural</em> : ninjas</p>
+                        <div class="wordbot">
+                            <button class="likecount" onclick='buttonclick(this); alert("You liked it")'>0</button>
+                        </div>
+                    </div>
+                    <span>A person skilled in <a href="#">Japanese</a> the art of <a href="#">ninjutsu</a></span>
+                </div>
+                <div class="definition">
+                    <div class="wordside">
+                        <h2>Ninja</h2>
+                        <p>Noun</p>
+                        <p><em>Plural</em> : ninjas</p>
+                        <div class="wordbot">
+                            <button class="likecount" onclick='buttonclick(this); alert("You liked it")'>0</button>
+                        </div>
+                    </div>
+                    <span>A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</span>
+                </div>
+            </div>
+            <div class="rightpage">
+                <div class="rightbox">
+                    <p>Dojonary is defined by <h3>you</h3>!</p>
+                    <button class="adddef" onclick="deletebut(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

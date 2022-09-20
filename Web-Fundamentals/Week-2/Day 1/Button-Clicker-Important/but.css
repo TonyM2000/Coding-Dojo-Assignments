@@ -1,0 +1,78 @@
+*{margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', Times, serif;}
+.fullpage{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 1.522em;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    padding-right: 1.522em;
+}
+.login button{
+    background-color: aquamarine;
+    padding: 10%;
+}
+.pagebody{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.leftpage{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 3em;
+}
+.rightpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.definition{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    border: 5.22px solid black;
+}
+.wordside{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: .522em;
+}
+.likecount::after{
+    content: " likes";
+}
+.adddef{
+    padding: 1em;
+    background-color: lightgreen;
+    border: 5.22px solid black;
+}
+.rightbox{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+    border: 5.22px solid black;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.definition span{
+    flex:4;
+    align-self: center;
+    text-align: center;
+}
+.likecount{
+    background-color: goldenrod;
+    padding: 5.22px;
+}
