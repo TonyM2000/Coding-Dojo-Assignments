@@ -1,0 +1,144 @@
+*{margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', Times, serif;}
+.fullpage{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    padding-left: 10%;
+    gap: 10px;
+}
+.topside{
+    display: flex;
+    flex-direction: column;
+}
+.loginandjoin{
+    display: flex;
+    flex-direction: row;
+    background-color: #292b31;
+    color: white;
+    padding: 2%;
+    font-size: x-large;
+    align-items: center;
+}
+.loginjoinbuttons{
+    display: flex;
+    margin-left: auto;
+    gap: 5px;
+}
+.loginjoinbuttons button.login{
+    background-color: blue;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: white;
+}
+.loginjoinbuttons button.join{
+    background-color: orange;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.searchbarsection{
+    display: flex;
+    background-color: #f6d79d;
+    padding: 2%;
+    align-items:center;
+    gap: 2em;
+}
+.icons img{
+    height: 6em;
+    width: 6em;
+}
+.searchgo button{
+    background-color: blue;
+    color: white;
+    margin-right: 50px;
+}
+.searchgo{
+    display: flex;
+    flex: 1;
+}
+.searchgo input{
+    padding: 5px;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 4;
+}
+.imageandtext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imageandtext img{
+    border-radius: 100%;
+    border-color: white;
+    border: 5px solid white;
+    background-color: white;
+}
+.bottomside{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+.bottomleft{
+    display: flex;
+    flex-direction: column;
+    flex:3;
+    width: auto;
+    background-color: lightgrey;
+    gap: 10px;
+    padding: 10px;
+}
+.bottomleft img{
+    width: 550px;
+    height: 300px;
+    align-self: center;
+}
+.bottomleft h3{
+    align-self: center;
+    color: #615ff9;
+}
+.bottomright{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.imagewords{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-indent: auto;
+}
+.bottomleft a{
+    text-align: center;
+}
+.reccomendations img{
+    width: 250px;
+}
+.reccomendations{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.recwords{
+    display: flex;
+    flex-direction: row;
+}
+.likes img{
+    width: 15px;
+    height: 15px;
+}
+.likes{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+}
+.recrow{
+    display: flex;
+    flex-direction: row;
+}

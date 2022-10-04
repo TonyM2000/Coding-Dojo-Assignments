@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="yellowbelt.css">
+</head>
+
+<body>
+    <div class="fullpage">
+        <div class="topside">
+            <div class="loginandjoin">
+                <span style="color: white;">Just</span><span style="color:orange">Dessert</span>
+                <div class="loginjoinbuttons">
+                    <button class="join" onclick="deletebut(this)">Join</button>
+                    <button class="login" onclick="changebut(this)">Login</button>
+                </div>
+            </div>
+            <div class="searchbarsection">
+                <div class="searchgo">
+                    <input id="searchitem" type="text" placeholder="SEARCH">
+                    <button onclick="searchit()">GO</button>
+                </div>
+                <div class="icons">
+                    <div class="imageandtext">
+                        <img src="cake.png" alt="icon of a cake">
+                        Cake
+                    </div>
+                    <div class="imageandtext">
+                        <img src="cookie.png" alt="icon of a cookie">
+                        Cookies
+                    </div>
+                    <div class="imageandtext">
+                        <img src="ice-cream.png" alt="image of icecream">
+                        Ice-Cream
+                    </div>
+                    <div class="imageandtext">
+                        <img src="pie.png" alt="image of pie">
+                        Pie
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomside">
+            <div class="bottomleft">
+                <h3>Recipe of The Day</h3>
+                <img src="orange-tart.jpg" alt="image of orange tart">
+                <div class="imagewords">
+                    <p>Orange Tea Jelly Tart</p>
+                    <div class="link">By <a href="#">yuripiano</a> </div>
+                </div>
+                <a href="#">See Full Recipe</a>
+            </div>
+            <div class="bottomright">
+                <span>Reccomended for you:</span>
+                <hr>
+                <div class="reccomendations">
+                    <img src="macarons.jpg" alt="image of macarons">
+                    <div class="recrow">
+                        <span>Macarons</span>
+                        <div class="likes"><span class="likecount">0</span><button onclick="add1(this)"><img
+                                    src="heart.png" alt="heart icon"></button></div>
+                    </div>
+                    <p>By <a href="#">Emilie W.</a></p>
+                </div>
+                <div class="reccomendations">
+                    <img src="creme-brulee.jpg" alt="image of creme-brulee">
+                    <div class="recrow">
+                        <span>CRÈME BRÛLÉE</span>
+                        <div class="likes"><span class="likecount">0</span><button onclick="add1(this)"><img
+                                    src="heart.png" alt="heart icon"></button></div>
+                    </div>
+                    <p>By <a href="#">Marisa G.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="yellowbelt.js"></script>
+</body>
