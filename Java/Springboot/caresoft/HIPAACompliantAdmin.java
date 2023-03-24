@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 public interface HIPAACompliantAdmin {
     
@@ -10,6 +11,7 @@ public interface HIPAACompliantAdmin {
     }
     
     // QA Test, PASS/FAIL of reports against QA expected results
+    // Basically its a boolean that returns pass or fail
     public default boolean adminQATest(ArrayList<String> expectedIncidents) {
         if (reportSecurityIncidents().equals(expectedIncidents)) {
             System.out.println("PASS");

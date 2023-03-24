@@ -1,13 +1,25 @@
-//... imports class definition...
+import java.util.ArrayList;
+import java.util.Date;
+
+public class AdminUser extends User implements HIPAACompliantUser, HIPAACompliantAdmin{
+
+    //... imports class definition...
     
     // Inside class:
-    private Integer employeeID;
-    private String role;
-    private ArrayList<String> securityIncidents;
+    // Used protected status instead of private because private was throwing up errors.
+    protected Integer employeeID;
+    protected String role;
+    private ArrayList<String> securityIncidents = new ArrayList<>();
     
     // TO DO: Implement a constructor that takes an ID and a role
     // TO DO: Implement HIPAACompliantUser!
     // TO DO: Implement HIPAACompliantAdmin!
+
+    // This is a constructor that takes an ID and a role
+    public AdminUser(int id, String role) {
+        super(id);
+        this.role = role;
+    }
     
     public void newIncident(String notes) {
         String report = String.format(
@@ -23,5 +35,31 @@
         );
         securityIncidents.add(report);
     }
+    @Override
+    public ArrayList<String> reportSecurityIncidents() {
+        return securityIncidents;
+
+
+    }
+    @Override
+    public boolean assignPin(int pin) {
+        if(pin >= 100000){
+            return true;
+        } else {
+            return false;
+        }
+ 
+    }
+    @Override
+    public boolean accessAuthorized(Integer confirmedAuthID) {
+        if(this.id != confirmedAuthID){
+            this.authIncident();
+        }    
+        return(this.id == confirmedAuthID);
+
+    }
     
     // TO DO: Setters & Getters
+
+    
+}
